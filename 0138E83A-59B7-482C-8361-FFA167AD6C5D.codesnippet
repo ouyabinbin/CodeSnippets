@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>creatCell</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
+    if (self) {
+        &lt;#添加子控件#&gt;
+           }
+    return self;
+}
+
++ (instancetype)&lt;#Cell名称#&gt;WithTbaleView:(UITableView *)tableView
+{
+    static NSString *cellID = @"&lt;#cell名称#&gt;ID";
+    &lt;#Cell类名#&gt; *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (cell == nil) {
+        cell = [[self alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    return cell;
+}
+
+
+- (void)awakeFromNib {
+    // Initialization code
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
++ (CGFloat)cellForHeight
+{
+    return &lt;#Cell高度#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0138E83A-59B7-482C-8361-FFA167AD6C5D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>快速实现自定义Cell</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>快速实现自定义Cell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

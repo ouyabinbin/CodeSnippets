@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>createButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIButton *&lt;#按键名称#&gt; = [[UIButton alloc] initWithFrame:&lt;#Frame#&gt;];
+&lt;#按键名称#&gt;.imageEdgeInsets = UIEdgeInsetsMak&lt;#图片内切设置#&gt;;
+[&lt;#按键名称#&gt; setImage:[UIImage imageNamed:@"&lt;#高亮下的图片#&gt;"] forState:(UIControlStateHighlighted)];
+[&lt;#按键名称#&gt; setImage:[UIImage imageNamed:@"&lt;#普通状态下的图片#&gt;"] forState:(UIControlStateNormal)];
+[&lt;#按键名称#&gt; addTarget:self action:@selector(&lt;#按键事件#&gt;) forControlEvents:(UIControlEventTouchUpInside)];
+[&lt;#按键名称#&gt; setBackgroundImage:[UIImage imageNamed:@"&lt;#普通状态下的背景图片#&gt;"] forState:(UIControlStateNormal)];
+[&lt;#按键名称#&gt; setTitleColor:&lt;#(UIColor *)#&gt; forState:(UIControlStateNormal)];
+[&lt;#按键名称#&gt; setTitleColor:&lt;#(UIColor *)#&gt; forState:(UIControlStateDisabled)];
+[&lt;#按键名称#&gt; setTitle:&lt;#(NSString *)#&gt; forState:(UIControlStateNormal)];
+[&lt;#按键名称#&gt; setTitle:&lt;#(NSString *)#&gt; forState:(UIControlStateDisabled)];
+&lt;#按键名称#&gt;.titleLabel.font = &lt;#字体#&gt;;
+&lt;#按键名称#&gt;.clipsToBounds = YES;
+&lt;#按键名称#&gt;.layer.cornerRadius = 4.0f;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8D2B2FF7-F9E1-4134-B337-2BD704F0442B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建一个button</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建一个button</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

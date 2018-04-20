@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>createUILabel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UILabel *label = [[UILabel alloc] initWithFrame:&lt;#Frame#&gt;];
+label.font = &lt;#字体大小#&gt;;
+    label.textAlignment = NSTextAlignment;
+label.textColor = &lt;#文字颜色#&gt;;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>04A6A5B1-B1AC-43F4-B14D-92EB024CCC2B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建一个Label</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建一个Label</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

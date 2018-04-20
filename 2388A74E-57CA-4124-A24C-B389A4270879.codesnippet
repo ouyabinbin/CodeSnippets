@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>creatSegmentedControl</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSArray *titles = @[@"预约维保",@"预约换油"];
+UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:titles];
+    [segmentedControl addTarget:self action:@selector(seletShowData:) forControlEvents:(UIControlEventValueChanged)];
+    segmentedControl.tintColor = [UIColor whiteColor];
+    [segmentedControl setTitleTextAttributes:@{NSFontAttributeName : FONT_ADAPTIVE(13)}forState:UIControlStateNormal];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2388A74E-57CA-4124-A24C-B389A4270879</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建一个UISegmentedControl</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建一个UISegmentedControl</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

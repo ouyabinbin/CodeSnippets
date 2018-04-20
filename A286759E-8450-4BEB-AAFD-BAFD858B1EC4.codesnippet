@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>shoushi</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UITapGestureRecognizer  *gesture = [[UITapGestureRecognizer alloc] initWithTarget:&lt;#接受事件的ID#&gt; action:@selector(tapGestureClick:)];
+[&lt;#手势添加到哪个空间上#&gt; addGestureRecognizer:gesture];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A286759E-8450-4BEB-AAFD-BAFD858B1EC4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>添加一个单击手势识别器</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>添加一个单击手势识别器</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

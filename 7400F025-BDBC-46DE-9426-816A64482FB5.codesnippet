@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>createUITextField</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    UITextField *&lt;#输入框名称#&gt;TextField = [[UITextField alloc] initWithFrame:&lt;#Frame#&gt;];
+    &lt;#输入框名称#&gt;TextField.backgroundColor = &lt;#背景颜色#&gt;;
+    &lt;#输入框名称#&gt;TextField.placeholder = &lt;#placeholder#&gt;;;
+    &lt;#输入框名称#&gt;TextField.leftView = &lt;#leftView#&gt;;
+    &lt;#输入框名称#&gt;TextField.leftViewMode = UITextFieldViewModeAlways;
+    &lt;#输入框名称#&gt;TextField.clipsToBounds = YES;
+    &lt;#输入框名称#&gt;TextField.layer.cornerRadius = 3.0f;
+    &lt;#输入框名称#&gt;TextField.layer.borderColor = &lt;#边框颜色#&gt;;
+&lt;#输入框名称#&gt;TextField.layer.borderWidth = &lt;#边框宽度#&gt;;
+    &lt;#输入框名称#&gt;TextField.textColor = &lt;#文字颜色#&gt;;
+    &lt;#输入框名称#&gt;TextField.font = &lt;#文字字体#&gt;;
+    &lt;#输入框名称#&gt;TextField.keyboardType = &lt;#键盘类型#&gt;;
+    &lt;#输入框名称#&gt;TextField.textAlignment = &lt;#NSTextAlignment#&gt;;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7400F025-BDBC-46DE-9426-816A64482FB5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建输入框</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建一个输入框</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

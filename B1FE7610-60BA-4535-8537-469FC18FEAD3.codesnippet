@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>podText文字</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>platform :ios, '7.0'
+pod 'AFNetworking', '~&gt; 3.1.0'
+pod 'MJRefresh', '~&gt; 3.1.0'
+pod 'MJExtension', '~&gt; 3.0.10'
+#pod 'iOS-AlipaySDK', '~&gt; 3.0.2'
+#pod 'JPush', '~&gt; 2.1.6'
+#pod 'MBProgressHUD', '~&gt; 0.9.2'
+#pod 'UMengSocial', '~&gt; 5.0'
+#pod 'SDCycleScrollView', '~&gt; 1.64'
+#pod 'SVProgressHUD', '~&gt; 2.0.3'
+#pod 'Masonry', '~&gt; 1.0.1'
+#pod 'IHKeyboardAvoiding'
+#pod 'AMap2DMap'
+#pod 'ReactiveCocoa', '~&gt; 4.2.1'</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B1FE7610-60BA-4535-8537-469FC18FEAD3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>podText</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>podText</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

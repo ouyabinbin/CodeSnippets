@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>choseVierson</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        // 获得主窗口
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    
+        // 判断当前软件的版本
+        NSString *versionKey = (__bridge NSString *)kCFBundleVersionKey;
+    
+        // 从沙盒中取出上次存储的软件版本号(取出用户上次的使用记录,利用偏好设置)
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSString *lastVersion = [defaults objectForKey:versionKey];
+    
+        // 取出当前软件的版本
+        NSString *currentVersion = [NSBundle mainBundle].infoDictionary[versionKey];
+    
+        if ([lastVersion isEqualToString:currentVersion]) {
+            // 设置主视图的root控制器
+            window.rootViewController = [[LPHTabBarController alloc] init];
+        }else
+        {
+            // 设置主视图为新特性视图
+            window.rootViewController = [[LPHNewFeatueViewController alloc] init];
+    
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7977F198-0A3D-40E4-9C8B-9A802B50C921</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>判断版本号,选择是否启动新特性</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

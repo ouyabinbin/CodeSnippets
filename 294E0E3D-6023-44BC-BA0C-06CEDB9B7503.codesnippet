@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>alertView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"修改英雄名" message:nil delegate:nil cancelButtonTitle:@"返回" otherButtonTitles:@"修改", nil];
+    
+    // 设置UIAlertView的类型是明文输入类型
+    alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
+    
+    // 获取第一个textLabel
+    UITextField *textField =[alertView textFieldAtIndex:0];
+    
+    // 在输入框显示英雄名
+    textField.text = [self.dataPlist[indexPath.row] name];
+    
+    // 显示这个UIAlertView
+    [alertView show];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>294E0E3D-6023-44BC-BA0C-06CEDB9B7503</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIAlertView的使用</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

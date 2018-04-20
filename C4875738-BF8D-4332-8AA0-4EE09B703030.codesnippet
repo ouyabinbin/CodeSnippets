@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>model模型转数据</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (NSArray *)&lt;#数组名#&gt;
+{
+    if (_&lt;#数组名#&gt; == nil) {
+        
+        // 解析plist文件
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"&lt;#数据源#&gt;" ofType:nil];
+        NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
+        
+        // 字典转模型
+        NSMutableArray *Models = [NSMutableArray arrayWithCapacity:dictArray.count];
+        for (NSDictionary *dict in dictArray) {
+            
+            &lt;#模型类名称#&gt; *model = [&lt;#模型类名称#&gt; &lt;#方法名#&gt;:dict];
+            
+            [Models addObject:model];
+        }
+        
+        _&lt;#数组名#&gt; = Models;
+    }
+    return _&lt;#数组名#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C4875738-BF8D-4332-8AA0-4EE09B703030</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>数据转模型</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

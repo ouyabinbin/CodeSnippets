@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>SizeOfString</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (CGSize)stringOfSizeWith:(UIFont *)font andMaxSize:(CGSize)maxSize
+{
+    
+    NSDictionary *attrs = @{ NSFontAttributeName : font };
+    
+    CGSize textSize = [self boundingRectWithSize:maxSize options: NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
+    
+    return textSize;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>598733C3-BA2E-44F8-B863-4652D66DECBD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>计算指定字符串占用的Size</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

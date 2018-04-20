@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zidian转模型</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (instancetype)initWithDict:(NSDictionary *)dict
+{
+    if (self = [super init]) {
+        
+        [self setValuesForKeysWithDictionary:dict];
+    }
+    return self;
+}
+
++ (instancetype)&lt;#模型名字#&gt;WithDict:(NSDictionary *)dict
+{
+    return [[XB&lt;#模型名字#&gt; alloc] initWithDict:dict];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>63E939BE-C55E-4282-B403-7D22592C86EF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>将字典转模型的实现方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

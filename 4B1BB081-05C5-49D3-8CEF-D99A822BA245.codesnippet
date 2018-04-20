@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>create富文本</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setLineSpacing:CYWidthAdapter(10)];
+    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [_FAQModel.content length])];
+    [attributedString addAttribute:NSFontAttributeName value:_detailLabel.font range:NSMakeRange(0, [_FAQModel.content length])];
+    [attributedString addAttribute:NSForegroundColorAttributeName value:UIColorFromRGB(0X464646) range:NSMakeRange(0, [_FAQModel.content length])];
+    [_detailLabel setAttributedText:attributedString];
+    _detailLabel.attributedText = attributedString;
+    _detailLabel.height = [CYFAQCell cellForHeightWtihFAQModel:FAQModel] - 2 * TOP_MARGIN;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4B1BB081-05C5-49D3-8CEF-D99A822BA245</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建一个富文本</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建一个富文本</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
