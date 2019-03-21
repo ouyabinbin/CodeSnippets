@@ -2,26 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>initVCSubviews</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)initSubviews {
-    
+	<string>- (void)setSpecificStatusManager:(SLCommonVideoSpecificStatusManager *)specificStatusManager {
+    objc_setAssociatedObject(self, &amp;pecific_status_manager_key, specificStatusManager, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (void)initSubviewsLayout {
-    
+- (SLCommonVideoSpecificStatusManager *)specificStatusManager {
+    return objc_getAssociatedObject(self, &amp;pecific_status_manager_key);
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C15CB4B9-FDB0-41C0-AF9B-EEBF242D2BE4</string>
+	<string>F981CBB1-90F9-4C26-906C-7AFF5AAD7A12</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>初始化子View</string>
+	<string>My Code Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

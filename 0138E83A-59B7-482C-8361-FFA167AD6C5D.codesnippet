@@ -13,9 +13,18 @@
 {
     self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
     if (self) {
-        &lt;#添加子控件#&gt;
+        [self initSubViews];
+        [self initLayout];
            }
     return self;
+}
+
+- (void)initSubViews {
+    // Initializat
+}
+
+- (void)initLayout {
+    
 }
 
 + (instancetype)&lt;#Cell名称#&gt;WithTbaleView:(UITableView *)tableView

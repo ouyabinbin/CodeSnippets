@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+ (void)load{
+    NSString *className = NSStringFromClass(self.class);
+    NSLog(@"classname%@",className);
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken,^{
+        // 需要hook的方法,如果想要再回到回去原来的方法,请在新的方法名的再次调用新的方法名
+        [self swizzleSEL:@selector(&lt;#原方法名#&gt;) withSEL:@selector(&lt;#新的方法名#&gt;)];
+    });
+}
+
+
++ (void)swizzleSEL:(SEL)originalSEL withSEL:(SEL)swizzledSEL {
+    Class class = [self class];
+    
+    Method originalMethod = class_getInstanceMethod(class, originalSEL);
+    Method swizzledMethod = class_getInstanceMethod(class, swizzledSEL);
+    
+    BOOL didAddMethod =
+    class_addMethod(class,
+                    originalSEL,
+                    method_getImplementation(swizzledMethod),
+                    method_getTypeEncoding(swizzledMethod));
+    
+    if (didAddMethod) {
+        class_replaceMethod(class,
+                            swizzledSEL,
+                            method_getImplementation(originalMethod),
+                            method_getTypeEncoding(originalMethod));
+    } else {
+        method_exchangeImplementations(originalMethod, swizzledMethod);
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5A3065A0-AC0E-474B-887B-2E3BA32E4FB9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

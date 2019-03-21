@@ -3,19 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weakType</string>
+	<string>guanlian</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak typeof(self) weakSelf = self;</string>
+	<string>static const char &lt;#关联#&gt;_key;
+- (void)&lt;#set方法#&gt;:(&lt;#类名#&gt; *)&lt;#对象名#&gt; {
+objc_setAssociatedObject(self, &amp;&lt;#关联的key#&gt;, &lt;#对象名#&gt;, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (&lt;#类名#&gt; *)&lt;#get方法#&gt; {
+    return objc_getAssociatedObject(self, &amp;&lt;#关联的key#&gt;);
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9909282D-7A6A-468E-9DD6-05F94ED9ECE2</string>
+	<string>2535A9D7-73B5-4329-BF02-AD6F1ED87D9A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>创建一个弱引用self</string>
+	<string>给类关联一个属性</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
