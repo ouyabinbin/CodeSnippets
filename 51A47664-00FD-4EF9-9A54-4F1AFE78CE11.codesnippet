@@ -3,26 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>lanjiazai</string>
+	<string>createLabel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (&lt;#类名#&gt; *)&lt;#对象名#&gt; {
-    if (_&lt;#类名#&gt; == nil) {
-        _&lt;#类名#&gt; = &lt;#初始化对象#&gt;;
-    }
-    return _&lt;#对象名#&gt;;
-}</string>
+	<string>        &lt;#name#&gt;Label = UILabel.init()
+        &lt;#name#&gt;Label.numberOfLines = 1
+        &lt;#name#&gt;Label.font = SLFontUtil.pingfangFont(ofSize: 15)
+        &lt;#name#&gt;Label.textAlignment = .left
+        &lt;#name#&gt;Label.textColor = UIColor.red
+        &lt;#name#&gt;Label.lineBreakMode = .byTruncatingTail</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B9C2CBD2-464C-4467-8E0B-E8019B139C8A</string>
+	<string>51A47664-00FD-4EF9-9A54-4F1AFE78CE11</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>懒加载OC</string>
+	<string>创建一个UILabel</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>懒加载</string>
+	<string>创建一个UILabel</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

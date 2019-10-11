@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>createButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#Button#&gt; = UIButton.init()
+        &lt;#Button#&gt;.backgroundColor = nil
+        &lt;#Button#&gt;.clipsToBounds = true
+        &lt;#Button#&gt;.setTitleColor(UIColor.bba_color(withRGBHex: 0xFFDD22), for: .normal)
+        &lt;#Button#&gt;.layer.cornerRadius = 15
+        &lt;#Button#&gt;.titleLabel?.font = SLFontUtil.pingfangFont(ofSize: 12)
+        &lt;#Button#&gt;.titleEdgeInsets = UIEdgeInsets.init(top: 0, left: 10, bottom: 0, right: 10)
+        &lt;#Button#&gt;.layer.borderColor = UIColor.bba_color(withRGBHex: 0xFFDD22)?.cgColor
+        &lt;#Button#&gt;.layer.borderWidth = 1.0/UIScreen.main.scale</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>76D63235-B32A-49EB-B2B7-FD963E95672E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建button-swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建button-swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

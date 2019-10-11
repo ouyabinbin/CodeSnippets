@@ -3,27 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>gouzao</string>
+	<string>iiii</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (id)init
-{
-    if(self = [super init])
-    {
-        //初始化子类的内部成员变量
-    }
-    // 返回一个已经初始化完毕的对象
-    return self;
-}</string>
+	<string></string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>91A73572-B79D-4555-B6EA-914E719BE509</string>
+	<string>4FA7E7B7-6B48-49A1-A970-508168357F77</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Code Snippet</string>
+	<string>调用可选代理方法</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

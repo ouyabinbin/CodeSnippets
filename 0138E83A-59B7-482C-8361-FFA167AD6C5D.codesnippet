@@ -27,7 +27,7 @@
     
 }
 
-+ (instancetype)&lt;#Cell名称#&gt;WithTbaleView:(UITableView *)tableView
++ (instancetype)&lt;#Cell名称#&gt;WithTableView:(UITableView *)tableView
 {
     static NSString *cellID = @"&lt;#cell名称#&gt;ID";
     &lt;#Cell类名#&gt; *cell = [tableView dequeueReusableCellWithIdentifier:cellID];

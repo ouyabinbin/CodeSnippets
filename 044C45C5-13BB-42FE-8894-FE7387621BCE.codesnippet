@@ -3,22 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>donghua</string>
+	<string>for</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        [UIView animateWithDuration:0.5 animations:^{
-        
-    }];
-</string>
+	<string>            for (index, &lt;#item#&gt;) in  &lt;#数组#&gt;.enumerated() {
+                
+            }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7CB8D49C-7DC5-4E4C-926B-E3BFDFFB4141</string>
+	<string>044C45C5-13BB-42FE-8894-FE7387621BCE</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UIIVIEW的动画设置</string>
+	<string>for循环</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

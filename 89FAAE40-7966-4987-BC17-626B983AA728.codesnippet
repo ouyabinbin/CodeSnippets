@@ -3,24 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>createUILabel</string>
+	<string>lanjiazai</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UILabel *label = [[UILabel alloc] initWithFrame:&lt;#Frame#&gt;];
-label.font = &lt;#字体大小#&gt;;
-    label.textAlignment = NSTextAlignment;
-label.textColor = &lt;#文字颜色#&gt;;</string>
+	<string>    lazy var &lt;#属性名#&gt; : &lt;#类名#&gt; = {
+        var _&lt;#属性名#&gt; = &lt;#类名#&gt;.init()
+        return _&lt;#属性名#&gt;
+    }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>04A6A5B1-B1AC-43F4-B14D-92EB024CCC2B</string>
+	<string>89FAAE40-7966-4987-BC17-626B983AA728</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>创建一个Label</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>创建一个Label</string>
+	<string>懒加载Swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

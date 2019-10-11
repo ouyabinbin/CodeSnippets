@@ -3,21 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ziti</string>
+	<string>yanshiGCD</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>downloadBtn.titleLabel.font = [UIFont systemFontOfSize:20];</string>
+	<string>DispatchQueue.main.asyncAfter(deadline: .now() + &lt;#延时#&gt;) {
+    &lt;#需要延时执行的代码#&gt;
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5072C483-87AC-4F9A-9411-35773B1C29FE</string>
+	<string>4267948E-A80E-4254-AEE2-5986604AF022</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>设置button字体</string>
+	<string>GCD延迟执行操作</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Code Snippet</string>
+	<string>延迟执行操作</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

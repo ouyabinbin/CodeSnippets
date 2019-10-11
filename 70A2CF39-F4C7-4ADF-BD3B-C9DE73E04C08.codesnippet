@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yymodel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)encodeWithCoder:(nonnull NSCoder *)aCoder {
+    [self yy_modelEncodeWithCoder:aCoder];
+}
+
+- (nullable instancetype)initWithCoder:(nonnull NSCoder *)aDecoder {
+    return [self yy_modelInitWithCoder:aDecoder];
+}
+
+- (nonnull id)copyWithZone:(nullable NSZone *)zone {
+    return [self yy_modelCopy];
+}
+
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{@"&lt;#元素名称#&gt;":@"&lt;#json协议中key#&gt;"};
+}
+
+
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{ @"&lt;#元素名称#&gt;" : [&lt;#目标Class#&gt; class]};
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>70A2CF39-F4C7-4ADF-BD3B-C9DE73E04C08</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>yyModel</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>YYModel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
