@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>logcode</string>
+	<string>block-func-callBack</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>SPLog(@"xubinLog======");</string>
+	<string>    func beginUploadImage(_ image: UIImage,  callBack:@escaping ((_ state :Bool, _ remindString: String?) -&gt; Void)) {
+        
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6D4581D6-B468-4C84-858B-C2A2D650646D</string>
+	<string>B0E10E72-7969-44F8-BC33-44F9F9C647A7</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>打一个log \n 打一个log </string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>LogCode</string>
+	<string>携带闭包参数的方法示例-swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,24 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>lanjiazai</string>
+	<string>alertVC</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    lazy var &lt;#属性名#&gt; : &lt;#类名#&gt; = {
-        let &lt;#属性名#&gt; = &lt;#类名#&gt;.init()
-        return &lt;#属性名#&gt;
-    }()</string>
+	<string>    let alertVC = UIAlertController.init(title: nil, message: "XXXXXXX", preferredStyle: .alert)
+
+    alertVC.addAction(UIAlertAction.init(title: "不保存", style: .cancel, handler: { [weak self] (action) in
+        
+    }))
+
+    alertVC.addAction(UIAlertAction.init(title: "保存", style: .default, handler: { [weak self] (action) in
+        
+        
+    }))
+
+    self.present(alert, animated: true, completion: nil)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>89FAAE40-7966-4987-BC17-626B983AA728</string>
+	<string>F9266A51-C87D-4B72-8CED-7AC8FED82724</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>懒加载Swift</string>
+	<string>UIAlertController-swift快捷代码</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

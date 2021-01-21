@@ -3,28 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>donghua</string>
+	<string>guard-守护解包</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    // 动画开始
-    [UIView beginAnimations:nil context:nil];
-    // 动画时间 单位是秒
-    [UIView setAnimationDuration:0.5];
-    
-    // 要执行的动作
-    
-    
-    // 动画结束
-    [UIView commitAnimations];</string>
+	<string>        guard let &lt;#解包的数据#&gt; = &lt;#被解包数据#&gt; else {
+            return
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>74F631DB-9059-49A9-956C-18AC87D553D1</string>
+	<string>05E39F8C-8B8A-4FFE-A446-5BFA6BDD8436</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>动画效果</string>
+	<string>guard解包守护</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

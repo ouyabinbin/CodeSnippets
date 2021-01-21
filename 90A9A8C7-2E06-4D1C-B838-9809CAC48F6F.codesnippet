@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weakType</string>
+	<string>block-创建一个可变闭包</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak typeof(self) weakSelf = self;</string>
+	<string>var &lt;#闭包名称#&gt;Block: ((_ &lt;#携带参数#&gt;: &lt;#参数类型#&gt;) -&gt; &lt;#返回参数类型#&gt;)?</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9909282D-7A6A-468E-9DD6-05F94ED9ECE2</string>
+	<string>90A9A8C7-2E06-4D1C-B838-9809CAC48F6F</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>创建一个弱引用self</string>
+	<string>创建一个可变闭包-swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

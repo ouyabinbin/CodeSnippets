@@ -3,21 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weakType</string>
+	<string>json-string2json</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak typeof(self) weakSelf = self;</string>
+	<string>        let jsonString = "Test"
+        let jsonData: Data = jsonString.data(using: .utf8) ?? Data()
+        guard let dict = try? JSONSerialization.jsonObject(with: jsonData as Data, options: JSONSerialization.ReadingOptions.mutableContainers) else {
+            return
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9909282D-7A6A-468E-9DD6-05F94ED9ECE2</string>
+	<string>8799E87E-DC5D-46A1-A158-8EDDB7C2AA06</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>创建一个弱引用self</string>
+	<string>字符串转Json-Swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

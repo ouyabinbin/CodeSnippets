@@ -9,10 +9,11 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>private var titleLabel: UILabel!
+	<string>private var _titleLabel: UILabel!
 override public init(frame: CGRect) {
     super.init(frame: frame)
     self.initSubview()
+    self.initSubviewLayout()
 }
 
 required init?(coder aDecoder: NSCoder) {
@@ -20,7 +21,11 @@ required init?(coder aDecoder: NSCoder) {
 }
 
 
-private func initSubview(){
+private func initSubview() {
+    
+}
+
+private func initSubviewLayout() {
     
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

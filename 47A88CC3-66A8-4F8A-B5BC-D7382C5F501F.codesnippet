@@ -35,8 +35,27 @@
         super.prepareForReuse()
     }
     
-    private func initSubviews (_ reuseIdentifier: String?) {
+    
+    /// 初始化子控件
+    /// - Parameter reuseIdentifier: reuseIdentifier
+    private func initSubviews(_ reuseIdentifier: String?) {
         
+    }
+    
+    /// 子控件布局
+    private func initSubviewLayout() {
+        
+    }
+    
+    /// 配置cell数据
+    /// - Parameter data: cellData
+    public func configData(data: Any) {
+        
+    }
+    
+    /// Cell高度
+    public func cellForHeight() -&gt; CGFloat {
+        return 0.0
     }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>47A88CC3-66A8-4F8A-B5BC-D7382C5F501F</string>
@@ -45,7 +64,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>创建自定义cell</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>创建自定义cell</string>
+	<string>创建自定义cell-swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

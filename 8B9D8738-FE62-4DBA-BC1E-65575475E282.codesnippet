@@ -3,21 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>zzz</string>
+	<string>struct-LayoutConstants</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** &lt;#说明文字#&gt; */</string>
+	<string>    private struct LayoutConstants {
+        static let &lt;#间隔#&gt;Padding: CGFloat = 15
+        static let &lt;#字体#&gt;FontSize: CGFloat = 18
+        static let &lt;#行间距#&gt;LineSpace: CGFloat = 4
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E13398B7-D912-4B0A-B529-EC77F5E685D6</string>
+	<string>8B9D8738-FE62-4DBA-BC1E-65575475E282</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>对持有的属性进行说明注释</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>注释</string>
+	<string>LayoutConstants-swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

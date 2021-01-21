@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weakType</string>
+	<string>mark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak typeof(self) weakSelf = self;</string>
+	<string>// MARK: - &lt;#说明文字#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9909282D-7A6A-468E-9DD6-05F94ED9ECE2</string>
+	<string>A29E549F-F5B5-42D3-8F08-38A4CD4580B8</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>带分割线的MARK</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>创建一个弱引用self</string>
+	<string>带分割线的MARK</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

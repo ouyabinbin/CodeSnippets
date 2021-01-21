@@ -45,6 +45,8 @@
 	<string>5A3065A0-AC0E-474B-887B-2E3BA32E4FB9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>runTime替换方法</string>
 	<key>IDECodeSnippetUserSnippet</key>

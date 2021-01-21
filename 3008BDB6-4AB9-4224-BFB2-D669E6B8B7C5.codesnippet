@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weakType</string>
+	<string>jsonJsonToString</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak typeof(self) weakSelf = self;</string>
+	<string>        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&amp;parseError];
+
+        NSString * str = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9909282D-7A6A-468E-9DD6-05F94ED9ECE2</string>
+	<string>3008BDB6-4AB9-4224-BFB2-D669E6B8B7C5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>创建一个弱引用self</string>
+	<string>字典转字符串</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

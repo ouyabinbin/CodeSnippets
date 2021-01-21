@@ -3,21 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weakType</string>
+	<string>enum枚举</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak typeof(self) weakSelf = self;</string>
+	<string>enum &lt;#枚举名称#&gt; : &lt;#枚举类型-这是可选值#&gt;{
+    case &lt;#枚举值#&gt;    
+    case &lt;#带参数的枚举值#&gt;(&lt;#参数名#&gt;:&lt;#参数类型#&gt;)
+    func &lt;#枚举中的方法名#&gt;() -&gt; &lt;#返回参数类型#&gt; {
+        switch self {
+        case .&lt;#枚举值#&gt;:
+        }
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9909282D-7A6A-468E-9DD6-05F94ED9ECE2</string>
+	<string>3D42D8A7-E7B9-410F-BAE5-C10B05332774</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>创建一个弱引用self</string>
+	<string>创建一个枚举-swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

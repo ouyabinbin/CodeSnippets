@@ -3,19 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>xib</string>
+	<string>jsonStringToJson</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    [bundle localizedStringForKey:&lt;#(NSString *)#&gt; value:&lt;#(NSString *)#&gt; table:&lt;#(NSString *)#&gt;];</string>
+	<string>        NSString * jsonString = @"";
+
+        NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+
+        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&amp;err]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>78C7AE83-DE37-4E79-AB26-7B7861175B13</string>
+	<string>C5BDC784-ED37-4858-8BA5-622CAF75048B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>xib文件调用</string>
+	<string>字符串转Json</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

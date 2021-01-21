@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>collectionView-delegate-func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - UICollectionViewDataSource
+extension YMCityBusinessDistrictCell: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -&gt; Int {
+        guard let datas = self.datas else {
+            return 0
+        }
+        
+        return datas.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -&gt; UICollectionViewCell {
+        
+        let cell: &lt;#Cell#&gt; = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.cellID, for: indexPath) as! &lt;#Cell#&gt;
+        if let _datas = datas, _datas.count &gt; indexPath.row {
+            //cell.configData(data: _datas[indexPath.row])
+        }
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let data = datas?[indexPath.row] {
+            onSelectItemAction?(data)
+        }
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>28CBAF80-2CE4-4CCF-BD78-38C928B33197</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>collectionView的代理方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
