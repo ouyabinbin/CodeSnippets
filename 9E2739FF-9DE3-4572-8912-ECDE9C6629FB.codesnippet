@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>backButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIButton *leftBtn = [[UIButton alloc] init];
+[leftBtn addTarget:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
+[leftBtn setImage:[UIImage imageNamed:@"vision_navi_left_back_black"] forState:UIControlStateNormal];
+[self.topBarContenView addSubview:leftBtn];
+[leftBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    make.left.equalTo(self.topBarContenView).offset(10);
+    make.bottom.equalTo(self.topBarContenView).mas_offset(-2);
+    make.height.width.mas_equalTo(40);;
+}];
+self.folderTitleLabel.font = [UIFont fontWithName:@"PingFangSC-Semibold" size:18.0];
+[self.topTabBar bbavision_setSelectionIndicatorTrackAnimation];
+#ifdef __BAIDUVISION
+- (void)backAction:(id)sender {
+    if (self.navigationController) {
+        [self.navigationController popViewControllerAnimated:true];
+    } else {
+        [self dismissViewControllerAnimated:true completion:nil];
+    }
+}
+#endif</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9E2739FF-9DE3-4572-8912-ECDE9C6629FB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>青春版返回按钮</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

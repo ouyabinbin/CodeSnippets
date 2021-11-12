@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    lazy var &lt;#属性名#&gt; : &lt;#类名#&gt; = {
+	<string>    lazy var &lt;#属性名#&gt;: &lt;#类名#&gt; = {
         let &lt;#属性名#&gt; = &lt;#类名#&gt;.init()
         return &lt;#属性名#&gt;
     }()</string>

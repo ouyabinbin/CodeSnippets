@@ -14,6 +14,8 @@
 	<string>614794F4-7337-414E-90E7-DA996A0FC5DE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>copy创建NSString成员变量</string>
 	<key>IDECodeSnippetUserSnippet</key>

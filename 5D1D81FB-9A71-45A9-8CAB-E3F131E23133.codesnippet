@@ -3,21 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>assign类型数据</string>
+	<string>def</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, assign) &lt;#类型#&gt; &lt;#成员名#&gt;;</string>
+	<string>#ifdef __BAIDUVISION
+    // 青春版差异代码
+#else
+    // 主线代码
+#endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>AB0B5879-726A-4B89-BD20-E3204448481C</string>
+	<string>5D1D81FB-9A71-45A9-8CAB-E3F131E23133</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>assign类型</string>
+	<string>青春版差异代码</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

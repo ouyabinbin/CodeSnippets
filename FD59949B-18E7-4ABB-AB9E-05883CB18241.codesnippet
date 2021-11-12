@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jiugong格算法</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    private func createItemView(imageUrl: String?) -&gt; UIImageView {
+        let imageView = UIImageView.init()
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 5.0
+        imageView.backgroundColor = .black
+        imageView.bba_tap { [weak self, weak imageView] in
+            self?.didImageBlock?(imageView?.tag ?? 0)
+        }
+        imageView.backgroundColor = UPUIHelper.CommonColor.imageBackgroundColor
+        imageView.up_setImage(imageUrl: imageUrl, placeholderImage: nil, succeedBackgroundColor: .black)
+        return imageView
+    }
+    
+    private func getShowItemView(imageUrl: String?, index: Int = 0) -&gt; UIImageView {
+        if index &lt; _imageViews.count {
+            let imageItem = _imageViews[index]
+            imageItem.isHidden = false
+            imageItem.backgroundColor = UPUIHelper.CommonColor.imageBackgroundColor
+            imageItem.up_setImage(imageUrl: imageUrl, placeholderImage: nil, succeedBackgroundColor: .black)
+            imageItem.tag = index
+            return imageItem
+        } else {
+            let imageItem = self.createShowImageItemView(imageUrl: imageUrl)
+            imageItem.tag = index
+            self.addSubview(imageItem)
+            _imageViews.append(imageItem)
+            return imageItem
+        }
+    }
+    
+    public func configItems(images: [UPImageEntity]?, contentWidth: CGFloat) {
+        _imageViews.forEach { (imageView) in
+            imageView.isHidden = true
+        }
+        
+        if let images = images, images.count &gt; 0 {
+            if images.count == 1 {
+                let imageView = self.getShowImageItemView(imageUrl: images.first?.imageUrl)
+                imageView.contentMode = .scaleAspectFit
+                imageView.mas_remakeConstraints { (maker) in
+                    maker?.edges.mas_equalTo()(UIEdgeInsets.zero)
+                }
+            } else {
+                // 计算高度
+                let imageItemSize = UPForumLandingPageImagesView.imageItemSize(contentWidth: contentWidth)
+                for (index, imageData) in  images.enumerated() {
+                    var lineNum: Int = 0
+                    var columnNum: Int = 0
+                    if images.count == 4 {
+                        // 4图模板
+                        lineNum = Int(CGFloat(index) / 2.0)
+                        columnNum = Int(index % 2)
+                    } else {
+                        lineNum = Int(CGFloat(index) / 3.0)
+                        columnNum = Int(index % 3)
+                    }
+                    let imageView = self.getShowImageItemView(imageUrl: imageData.imageUrl, index: index)
+                    imageView.contentMode = .scaleAspectFill
+                    imageView.mas_remakeConstraints { (maker) in
+                        maker?.left.equalTo()(self)?.offset()((imageItemSize.width + LayoutConstants.ImageItemPadding) * CGFloat(columnNum))
+                        maker?.top.equalTo()(self)?.offset()((imageItemSize.height + LayoutConstants.ImageItemPadding) * CGFloat(lineNum))
+                        maker?.size.mas_equalTo()(imageItemSize)
+                    }
+                }
+            }
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FD59949B-18E7-4ABB-AB9E-05883CB18241</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建九宫格算法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
