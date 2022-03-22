@@ -3,26 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>createLabel</string>
+	<string>lashen</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let label = UILabel.init()
-label.numberOfLines = 1
-label.font = UIFont(name: "PingFang-SC-Regular", size: 15)
-label.textAlignment = .left
-label.textColor = UIColor.bba_color(withRGBHex: 0x1F1F1F)
-label.lineBreakMode = .byTruncatingTail= .byTruncatingTail</string>
+	<string>        // 设置横向抗拉伸
+        nameLabel.setContentHuggingPriority(UILayoutPriority.defaultHigh, for: .horizontal)
+        // 设置横屏抗压缩
+        nameLabel.setContentCompressionResistancePriority(UILayoutPriority.defaultHigh, for: .horizontal)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>51A47664-00FD-4EF9-9A54-4F1AFE78CE11</string>
+	<string>112EB55B-3F09-4B78-B277-E9798C3ABA49</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>创建一个UILabel</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>创建一个UILabel</string>
+	<string>配置抗拉伸/压缩</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

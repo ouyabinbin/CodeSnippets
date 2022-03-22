@@ -9,15 +9,15 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#Button#&gt; = UIButton.init()
-        &lt;#Button#&gt;.backgroundColor = nil
-        &lt;#Button#&gt;.clipsToBounds = true
-        &lt;#Button#&gt;.setTitleColor(UIColor.bba_color(withRGBHex: 0xFFDD22), for: .normal)
-        &lt;#Button#&gt;.layer.cornerRadius = 15
-        &lt;#Button#&gt;.titleLabel?.font = SLFontUtil.pingfangFont(ofSize: 12)
-        &lt;#Button#&gt;.titleEdgeInsets = UIEdgeInsets.init(top: 0, left: 10, bottom: 0, right: 10)
-        &lt;#Button#&gt;.layer.borderColor = UIColor.bba_color(withRGBHex: 0xFFDD22)?.cgColor
-        &lt;#Button#&gt;.layer.borderWidth = 1.0/UIScreen.main.scale</string>
+	<string>let button = UIButton.init()
+button.backgroundColor = nil
+button.clipsToBounds = true
+button.setTitleColor(UIColor.bba_color(withRGBHex: 0xFFDD22), for: .normal)
+button.layer.cornerRadius = 15
+button.titleLabel?.font = UIFont(name: "PingFang-SC-Regular", size: 15)
+button.titleEdgeInsets = UIEdgeInsets.init(top: 0, left: 10, bottom: 0, right: 10)
+button.layer.borderColor = UIColor.bba_color(withRGBHex: 0xFFDD22)?.cgColor
+button.layer.borderWidth = 1.0/UIScreen.main.scale</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>76D63235-B32A-49EB-B2B7-FD963E95672E</string>
 	<key>IDECodeSnippetLanguage</key>

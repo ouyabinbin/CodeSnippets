@@ -13,13 +13,13 @@
 {
     self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
     if (self) {
-        [self initSubViews];
+        [self configSubViews];
         [self initLayout];
            }
     return self;
 }
 
-- (void)initSubViews {
+- (void)configSubViews {
     // Initializat
 }
 

@@ -9,10 +9,11 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        var &lt;#name#&gt;ImageView = UIImageView.init()
-        &lt;#name#&gt;ImageView.contentMode = .scaleAspectFill
-        &lt;#name#&gt;ImageView.clipsToBounds = true
-        &lt;#name#&gt;ImageView.backgroundColor = UIColor.bba_color(withRGBHex: 0xF8F8F8)</string>
+	<string>let imageView = UIImageView.init()
+imageView.clipsToBounds = true
+imageView.layer.cornerRadius = 12.0
+imageView.contentMode = .scaleAspectFill
+imageView.backgroundColor = UIColor.bba_color(withRGBHex: 0x1F1F1F)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>BE8AFB0C-AFBA-43DB-8616-D8BDA7978175</string>
 	<key>IDECodeSnippetLanguage</key>

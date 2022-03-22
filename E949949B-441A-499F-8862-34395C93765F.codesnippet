@@ -3,26 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>createLabel</string>
+	<string>abtime-获取系统时间戳</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let label = UILabel.init()
-label.numberOfLines = 1
-label.font = UIFont(name: "PingFang-SC-Regular", size: 15)
-label.textAlignment = .left
-label.textColor = UIColor.bba_color(withRGBHex: 0x1F1F1F)
-label.lineBreakMode = .byTruncatingTail= .byTruncatingTail</string>
+	<string>CFAbsoluteTimeGetCurrent()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>51A47664-00FD-4EF9-9A54-4F1AFE78CE11</string>
+	<string>E949949B-441A-499F-8862-34395C93765F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>创建一个UILabel</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>创建一个UILabel</string>
+	<string>获取当前系统时间戳</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
