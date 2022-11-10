@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lineHeight</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        let attributedString = NSMutableAttributedString(string: text ?? "")
+        attributedString.yy_font = UIFont(name: "PingFang-SC-Regular", size: 12)
+        let size = CGSize(width: CGFloat.greatestFiniteMagnitude, height: 30)
+        let container = YYTextContainer()
+        container.size = size
+        container.maximumNumberOfRows = 1
+        var contentLabelWidth: CGFloat = 0.0
+        if let layout = YYTextLayout(container: container, text: attributedString) {
+            contentLabelWidth = layout.textBoundingSize.width
+        }
+        contentLabelWidth = CGFloat(ceil(contentLabelWidth + 2 * LayoutConstants.leftRightPadding))
+        return min(contentLabelWidth, LayoutConstants.contentMaxWidth)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A7445D49-9009-4EE9-BD32-57B88076D8CB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>YYLabel计算文字高度</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

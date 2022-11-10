@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>fontSzieUpdate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private func fontSizeUpdateAdaptive() {
+    let scaled = BBAUIMeasureManager.getMeasureScaledSize(Float(&lt;#原始尺寸#&gt;), measureType: BBAUIMeasureType.framework)
+    
+    NotificationCenter.default.addObserver(self, selector: #selector(bba_fontSizeChanged(noti:)), name: NSNotification.Name(rawValue: BBAUIMeasure.kBBANotificationFontSizeChanged), object: nil)
+}
+
+private func measureScaledSize(_ size: CGFloat) -&gt; CGFloat {
+    return BDPPersonalPageFontAdaptiveUtils.measureScaledSize(size)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>47B773B1-0211-4226-8A76-21ABC0B17CB3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>字体更新适配方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

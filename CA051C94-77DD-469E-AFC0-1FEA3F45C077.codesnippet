@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>loginAAHandelCode</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        BBAAccountLoginInfo *info = [[BBAAccountLoginInfo alloc] init];
+        info.normalizeAccountIfNeed = YES;
+        info.sourceType = BBAAccountLoginSourceType_Native;
+        info.src = @"others";
+        info.customLoginTitle = @"登录后可查看收藏";
+        info.type = BBAAccountLoginType_Fast;
+        info.loginViewType = BBAAccountLoginViewType_HalfScreen;
+        info.themStyle = BBAAccountLoginThemeStyleGlobal;
+        [Pyramid.bba_account loginForInfo:info
+                                  superVC:nil
+                       willDisappearBlock:nil
+                          completionBlock:^(BOOL success) {
+            if (success) {
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    [self gotoLongVideoListVC];
+                });
+                [dispatcher doCallbackWithStatus:kBBASDCallBackSuccessStatus message:kBBASDCallBackSuccessMSG data:nil];
+            } else {
+                [dispatcher doCallbackWithStatus:@"2002" message:@"用户登录失败" data:nil];
+            }
+        }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CA051C94-77DD-469E-AFC0-1FEA3F45C077</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>登陆操作代码loginCode</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
